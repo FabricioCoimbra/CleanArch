@@ -6,12 +6,24 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Domain", "CleanArch.Domain\CleanArch.Domain.csproj", "{F979C2D6-E80E-4CEA-9FCC-F62940815208}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Application", "CleanArch.Application\CleanArch.Application.csproj", "{2F807BCF-47F1-4A00-9ED0-F0E878812D9C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F979C2D6-E80E-4CEA-9FCC-F62940815208} = {F979C2D6-E80E-4CEA-9FCC-F62940815208}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.Data", "CleanArch.Data\CleanArch.Data.csproj", "{C092BEC3-2E55-445E-BD11-0F7BD369242E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F979C2D6-E80E-4CEA-9FCC-F62940815208} = {F979C2D6-E80E-4CEA-9FCC-F62940815208}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.IoC", "CleanArch.IoC\CleanArch.IoC.csproj", "{3F8FF8D5-8F52-4634-AA49-C146FE314B16}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2F807BCF-47F1-4A00-9ED0-F0E878812D9C} = {2F807BCF-47F1-4A00-9ED0-F0E878812D9C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArch.MVC", "CleanArch.MVC\CleanArch.MVC.csproj", "{5D57964E-D6B4-4B7F-A2B6-9C9E8A4535FA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3F8FF8D5-8F52-4634-AA49-C146FE314B16} = {3F8FF8D5-8F52-4634-AA49-C146FE314B16}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
